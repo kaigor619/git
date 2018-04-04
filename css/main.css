@@ -1,7 +1,89 @@
-body {
-  background-color: #5ccd65;
-  margin: auto; }
+body{
+  font-family: Roboto Slab ,sans-serif;
+  margin:0;
+  padding:0;
+}
+header{
+  height:1104px;
+  background-image: url("/img/1.png");
 
-p {
-  color: #de4610;
-  margin-left: 100px; }
+
+}
+.container{
+  padding:0;
+  margin:0;
+  margin:0 auto;
+  width:980px;
+  height:167px;
+  border:2px solid silver;
+
+}
+.head{
+  background-image: url("/img/деревянный фон.png");
+  height:170px;
+  margin-left:39px;
+  margin-right:39px;
+  border-radius:20px;
+  box-shadow:0 0 100px rgb(28, 28, 25);
+}
+.first__slide{
+  display:flex;
+}
+.container__logo{
+  margin-top:15px;
+  display:block;
+
+}
+.menu {
+  display:flex;
+  padding:0;
+  margin-top:60px;
+
+}
+.menu li{
+  margin-right:26px;
+  display:block;
+}
+.menu li a{
+  text-decoration: none;
+  font-size:24px;
+  color:#26180b;
+  font-weight:bold;
+
+}
+.basket{
+  margin-top:20px;
+  width:120px;
+  height:100px;
+}
+.itoho {
+  padding:0;
+  margin-left:20px;
+
+
+
+
+}
+.itoho li{
+  display: block;
+  color:#4a341d;
+  line-height: 0.6;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+.order{
+font-size: 20px;
+  text-decoration: none;
+  color:#fff;
+  background:#ee1a1a;
+padding:6px 18px 6px 18px;
+  border-radius:9px;
+  font-weight: normal;
+position:absolute;
+margin-top:-5px;
+  margin-left:18px;
+  box-shadow:0px 3px 15px rgb(75, 42, 24);
+}
