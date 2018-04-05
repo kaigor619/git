@@ -3,6 +3,8 @@ body{
   margin:0;
   padding:0;
 }
+
+/*Первый экран*/
 header{
   height:1104px;
   background-image: url("/img/1.png");
@@ -14,8 +16,7 @@ header{
   margin:0;
   margin:0 auto;
   width:980px;
-  height:167px;
-  border:2px solid silver;
+  /* border:2px solid silver; */
 
 }
 .head{
@@ -47,22 +48,25 @@ header{
 .menu li a{
   text-decoration: none;
   font-size:24px;
-  color:#26180b;
+  color:#392918;
   font-weight:bold;
 
 }
+.menu-text{
+
+  background-color: #37230e;
+  padding:13px;
+  border-radius:10px;
+}
+.menu-text__color{
+  color:#d98d3e;
+}
 .basket{
-  margin-top:20px;
-  width:120px;
-  height:100px;
+  margin-top:33px;
 }
 .itoho {
   padding:0;
   margin-left:20px;
-
-
-
-
 }
 .itoho li{
   display: block;
@@ -71,9 +75,6 @@ header{
   font-size: 24px;
   font-weight: bold;
 }
-
-
-
 .order{
 font-size: 20px;
   text-decoration: none;
@@ -86,4 +87,90 @@ position:absolute;
 margin-top:-5px;
   margin-left:18px;
   box-shadow:0px 3px 15px rgb(75, 42, 24);
+}
+/*Конец шапки*/
+.pizza_text{
+  margin-top:69px;
+  color:rgb(237, 217, 227);
+  font-size: 78px;
+
+}
+.first-img{
+  display:flex;
+  justify-content: space-around;
+  margin-left:27px;
+  margin-right:27px;
+  margin-top:128px;
+}
+.superiority h3{
+  text-align: center;
+  color: rgb(237, 217, 227);
+  font-size:32px;
+}
+.up{
+  margin-top: 80px;
+}
+.two{
+  margin-top:71px;
+
+}
+.two-button{
+  font-size: 20px;
+    text-decoration: none;
+    color:#fff;
+    background:#ee1a1a;
+  padding:13px 27px 13px 27px;
+    border-radius:5px;
+    font-weight: normal;
+    box-shadow:0px 0px 20px rgb(75, 42, 24);
+}
+/*Конец первого экрана*/
+sector{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+.features{
+  margin:0;
+  padding:0;
+  height:667px;
+  width:100%;
+  display:flex;
+box-shadow:0 0 60px rgb(24, 23, 18);
+
+}
+.features__text{
+  background-image:url("/img/особенности-узор.png");
+  height:667px;
+  width:1056px;
+
+
+}
+.features__img{
+  background-image: url("/img/особенности.png");
+  height:667px;
+width:742px;
+}
+.features__text__main{
+float:right;
+margin-right:90px;
+margin-top: -20px;
+
+}
+.features-h3{
+  font-size:45px;
+  color:rgb(209, 201, 167);
+
+
+}
+.features__text__main__lorem{
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  width:538px;
+  height:390px;
+font-size:31px;
+color:#392918;
+  margin-top:-40px;
+
 }
