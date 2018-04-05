@@ -83,7 +83,7 @@ font-size: 20px;
 padding:6px 18px 6px 18px;
   border-radius:9px;
   font-weight: normal;
-position:absolute;
+
 margin-top:-5px;
   margin-left:18px;
   box-shadow:0px 3px 15px rgb(75, 42, 24);
@@ -125,26 +125,25 @@ margin-top:-5px;
     box-shadow:0px 0px 20px rgb(75, 42, 24);
 }
 /*Конец первого экрана*/
-sector{
-  margin:0;
-  padding:0;
-  width:100%;
-}
+
+
+
+
+/*Начало особенности*/
 .features{
   margin:0;
   padding:0;
   height:667px;
   width:100%;
   display:flex;
-box-shadow:0 0 60px rgb(24, 23, 18);
+  margin-bottom: 0;
+/* box-shadow:0 0 60px rgb(24, 23, 18); */
 
 }
 .features__text{
   background-image:url("/img/особенности-узор.png");
   height:667px;
   width:1056px;
-
-
 }
 .features__img{
   background-image: url("/img/особенности.png");
@@ -173,4 +172,64 @@ font-size:31px;
 color:#392918;
   margin-top:-40px;
 
+}
+/*Конец особенности*/
+
+
+
+
+/*Начало меню*/
+.menu-pizza{
+  height:1445px;
+  width:100%;
+  background:#e9c9c9;
+  padding:0;
+  margin:0;
+  border:2px solid #e9c9c9;
+}
+.menu-pizza__title {
+  font-size: 40px;
+  color: #6a4014;
+
+
+}
+
+.first-menu{
+background: url("/img/первое меню.png");
+width:265px;
+height:394px;
+overflow:hidden;
+border-radius:15px;
+}
+.first-menu__img{
+float:right;
+margin-top:9px;
+margin-left: 9px;
+
+}
+.first-menu__text{
+margin-top: -20px;
+margin-left: 16px;
+
+  padding:0;
+}
+.first-menu__text h1{
+  font-size:20px;
+  text-align: center;
+}
+.first-menu__text p{
+line-height:0.3;
+font-size:20px;
+
+}
+.first-menu__text i{
+float:left;
+}
+.detail{
+  font-size:18px;
+  margin-top:0;
+    margin-left:0;
+    float:right;
+    margin-top:10px;
+    margin-right:10px;
 }
