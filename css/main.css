@@ -3,6 +3,10 @@ body{
   margin:0;
   padding:0;
 }
+.wp-content{
+  display:flex;
+  flex-direction:column;
+}
 
 /*Первый экран*/
 header{
@@ -26,6 +30,7 @@ header{
   margin-right:39px;
   border-radius:20px;
   box-shadow:0 0 100px rgb(28, 28, 25);
+  border:2px solid rgb(82, 64, 26);
 }
 .first__slide{
   display:flex;
@@ -180,11 +185,13 @@ color:#392918;
 
 /*Начало меню*/
 .menu-pizza{
-  height:1445px;
+
   width:100%;
   background:#e9c9c9;
   padding:0;
   margin:0;
+
+
   border:2px solid #e9c9c9;
 }
 .menu-pizza__title {
@@ -232,4 +239,102 @@ float:left;
     float:right;
     margin-top:10px;
     margin-right:10px;
+}
+.first-line, .two-line, .three-line{
+  display:flex;
+  justify-content:space-around;
+  margin-top:72px;
+}
+.two-line, .three-line{
+  margin-top:42px;
+}
+.three-line{
+  margin-bottom: 108px;
+}
+/* Конец Меню */
+
+
+/* Начало Доставка */
+
+
+.delivery{
+background:url('/img/Доставка-фон.png');
+margin:0;
+padding:0;
+border-radius:15px;
+height:790px
+}
+
+.delivery__title{
+  font-size:70px;
+  margin-top:40px;
+  color:rgb(209, 201, 167);
+}
+.delivery-img{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-around;
+  margin-top:70px;
+
+}
+.superiority-2 h3{
+  text-align:center;
+  color:#91663b;
+  font-size:30px;
+  margin-top: -13px;
+}
+.up{
+  margin-top:60px;
+}
+.delivery-button{
+
+}
+.three{
+  margin-top:70px;
+  margin-bottom:40px;
+}
+/* Конец Доставка */
+/* Начало Контакти */
+.both-contacts{
+  display:flex;
+}
+
+.contacts{
+  background-image: url("/img/контакти-фон.png");
+  padding:0;
+  height:613px;
+  margin:0;
+
+
+}
+.contacts__text{
+  margin-top:52px;
+  /* border:2px solid rgb(19, 55, 98); */
+  width:480px;
+}
+.contacts__text h1{
+  font-size:70px;
+  color:rgb(33, 32, 27);
+}
+.contacts__text p i{
+  font-size: 30px;
+  font-weight:bold;
+}
+.contacts__text h3{
+  font-size:45px;
+  font-weight:bold;
+}
+.contacts__vk{
+  display:flex;
+  justify-content: space-around;
+}
+
+.contacts__img-3,.contacts__img-1{
+  margin-top:-10px;
+}
+.contacts__img{
+  margin-top:113px;
+  margin-left:75px;
+
 }
