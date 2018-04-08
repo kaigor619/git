@@ -10,8 +10,9 @@ body{
 
 /*Первый экран*/
 header{
-  height:1104px;
+  height:840px;
   background-image: url("/img/1.png");
+
 
 
 }
@@ -25,12 +26,14 @@ header{
 }
 .head{
   background-image: url("/img/деревянный фон.png");
-  height:170px;
+  height:150px;
   margin-left:39px;
   margin-right:39px;
   border-radius:20px;
   box-shadow:0 0 100px rgb(28, 28, 25);
-  border:2px solid rgb(82, 64, 26);
+  border:2px solid rgb(129, 100, 39);
+  width: 1715px;
+  position:fixed;
 }
 .first__slide{
   display:flex;
@@ -94,10 +97,14 @@ margin-top:-5px;
   box-shadow:0px 3px 15px rgb(75, 42, 24);
 }
 /*Конец шапки*/
+.pizza{
+  margin-top:170px;
+}
 .pizza_text{
-  margin-top:69px;
+  /* margin-top:100px; */
   color:rgb(237, 217, 227);
   font-size: 78px;
+
 
 }
 .first-img{
@@ -105,7 +112,7 @@ margin-top:-5px;
   justify-content: space-around;
   margin-left:27px;
   margin-right:27px;
-  margin-top:128px;
+  margin-top:40px;
 }
 .superiority h3{
   text-align: center;
@@ -116,7 +123,7 @@ margin-top:-5px;
   margin-top: 80px;
 }
 .two{
-  margin-top:71px;
+  margin-top:-20px;
 
 }
 .two-button{
@@ -261,7 +268,7 @@ float:left;
 background:url('/img/Доставка-фон.png');
 margin:0;
 padding:0;
-border-radius:15px;
+
 height:790px
 }
 
@@ -280,7 +287,7 @@ height:790px
 }
 .superiority-2 h3{
   text-align:center;
-  color:#91663b;
+  color:#000000;
   font-size:30px;
   margin-top: -13px;
 }
@@ -301,7 +308,7 @@ height:790px
 }
 
 .contacts{
-  background-image: url("/img/контакти-фон.png");
+  background-image: url("/img/фон-контакти.jpg-1.png");
   padding:0;
   height:613px;
   margin:0;
@@ -313,28 +320,46 @@ height:790px
   /* border:2px solid rgb(19, 55, 98); */
   width:480px;
 }
+
 .contacts__text h1{
   font-size:70px;
-  color:rgb(33, 32, 27);
+  color:#fff;
 }
 .contacts__text p i{
   font-size: 30px;
   font-weight:bold;
+  color:rgb(214, 180, 180);
 }
 .contacts__text h3{
-  font-size:45px;
-  font-weight:bold;
-}
-.contacts__vk{
-  display:flex;
-  justify-content: space-around;
+  font-size:55px;
+    color:rgb(224, 96, 55);
+    font-weight:bold;
+    margin-top:55px;
 }
 
-.contacts__img-3,.contacts__img-1{
-  margin-top:-10px;
-}
 .contacts__img{
   margin-top:113px;
   margin-left:75px;
 
+}
+/* КОНЕЦ Контакти
+
+
+Начало Футер */
+.footer{
+  background-image: url("/img/Футер.png");
+  height:120px;
+}
+.footer_text{
+display:flex;
+margin-top:40px;
+}
+.footer_text li{
+  display:block;
+font-size:20px;
+color:#fff;
+margin-right:50px;
+}
+.footer-img{
+  margin-top:-20px;
 }
