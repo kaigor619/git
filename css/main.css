@@ -15,6 +15,7 @@ header{
 
 
 
+
 }
 .container{
   padding:0;
@@ -33,7 +34,9 @@ header{
   box-shadow:0 0 100px rgb(28, 28, 25);
   border:2px solid rgb(129, 100, 39);
   width: 1715px;
-  position:fixed;
+  box-shadow: inset 0 0 10px rgb(92, 57, 11);
+  overflow: visible;
+  /* position:fixed; */
 }
 .first__slide{
   display:flex;
@@ -72,6 +75,16 @@ header{
 .basket{
   margin-top:33px;
 }
+
+.arrow{
+  margin-left:32px;
+}
+.arrow:hover{
+  transform: rotate(180deg);
+     transform-origin: 20% 40%;
+
+
+}
 .itoho {
   padding:0;
   margin-left:20px;
@@ -82,6 +95,7 @@ header{
   line-height: 0.6;
   font-size: 24px;
   font-weight: bold;
+
 }
 .order{
 font-size: 20px;
@@ -95,10 +109,12 @@ padding:6px 18px 6px 18px;
 margin-top:-5px;
   margin-left:18px;
   box-shadow:0px 3px 15px rgb(75, 42, 24);
+    /* box-shadow: inset 0 0 10px rgb(85, 84, 81); */
 }
 /*Конец шапки*/
 .pizza{
-  margin-top:170px;
+  /* margin-top:170px; */
+    margin-top:-30px;
 }
 .pizza_text{
   /* margin-top:100px; */
@@ -134,7 +150,8 @@ margin-top:-5px;
   padding:13px 27px 13px 27px;
     border-radius:5px;
     font-weight: normal;
-    box-shadow:0px 0px 20px rgb(75, 42, 24);
+    box-shadow:0px 0px 80px rgb(55, 48, 48);
+    /* border:1px solid #9e1414; */
 }
 /*Конец первого экрана*/
 
@@ -149,19 +166,24 @@ margin-top:-5px;
   width:100%;
   display:flex;
   margin-bottom: 0;
-/* box-shadow:0 0 60px rgb(24, 23, 18); */
+
 
 }
 .features__text{
   background-image:url("/img/особенности-узор.png");
   height:667px;
   width:1056px;
+    box-shadow: inset 0 0 40px rgb(88, 64, 11);
 }
+
 .features__img{
   background-image: url("/img/особенности.png");
   height:667px;
 width:742px;
+box-shadow: inset 0 0 20px rgb(0, 0, 0);
 }
+
+
 .features__text__main{
 float:right;
 margin-right:90px;
@@ -197,9 +219,10 @@ color:#392918;
   background:#e9c9c9;
   padding:0;
   margin:0;
+  box-shadow: inset 0 0 30px rgb(56, 59, 61);
 
 
-  border:2px solid #e9c9c9;
+  /* border:2px solid #e9c9c9; */
 }
 .menu-pizza__title {
   font-size: 40px;
@@ -214,6 +237,10 @@ width:265px;
 height:394px;
 overflow:hidden;
 border-radius:15px;
+}
+.first-menu:hover{
+  transform:scale(1.1);
+  transition:all.4s ease;
 }
 .first-menu__img{
 float:right;
@@ -308,13 +335,15 @@ height:790px
 }
 
 .contacts{
-  background-image: url("/img/фон-контакти.jpg-1.png");
+  /* background-image: url("/img/фон-контакти.jpg-1.png"); */
   padding:0;
-  height:613px;
+  min-height:613px;
   margin:0;
+  border:1px solid rgb(17, 18, 18);
 
 
 }
+
 .contacts__text{
   margin-top:52px;
   /* border:2px solid rgb(19, 55, 98); */
@@ -331,8 +360,8 @@ height:790px
   color:rgb(214, 180, 180);
 }
 .contacts__text h3{
-  font-size:55px;
-    color:rgb(224, 96, 55);
+  font-size:41px;
+    color:rgb(255, 255, 255);
     font-weight:bold;
     margin-top:55px;
 }
@@ -340,8 +369,11 @@ height:790px
 .contacts__img{
   margin-top:113px;
   margin-left:75px;
+box-shadow: 0 0 40px rgb(41, 43, 38)
+
 
 }
+
 /* КОНЕЦ Контакти
 
 
@@ -362,4 +394,84 @@ margin-right:50px;
 }
 .footer-img{
   margin-top:-20px;
+}
+/*Конец Футера  */
+
+
+/* Для стилизации модального окна */
+
+
+/* .advertising{
+	font-size:1.9em;
+	color:red;
+	position:relative;
+	left:200px;
+} */
+
+.box-modal {
+	position: relative;
+	width: 773px;
+	padding: 10px;
+	background: #fff;
+
+	box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+	border-radius: 6px;
+}
+.box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
+.box-modal_close:hover { color: #666; }
+
+.modal-window{
+  border:2px solid #986f18;
+  width:773px;
+  height:589px;
+  box-sizing:border-box;
+  position: relative;
+}
+.modal-window__img{
+  margin-left:20px;
+  margin-top:11px;
+}
+.modal-window__text{
+  height:213px;
+  width:290px;
+  margin-left:20px;
+  margin-top:30px;
+
+}
+.both-text{
+  display:flex;
+}
+.modal-window__main{
+  position:relative;
+  height:570px;
+  width:355px;
+}
+.price-modal{
+border:2px solid silver;
+  width:354px;
+  height:241px;
+position:absolute;
+bottom:0;
+right:0;
+padding:0;
+}
+.price-modal nav ul li{
+  display:inline-flex;
+  margin: 0;
+  margin-left:-25px;
+
+}
+.price-modal nav ul li div{
+  margin-right:10px;
+}
+.arrow-modal{
+  margin-top:14px;
+}
+.price-modal nav ul li h5{
+  font-size:1.9em;
+  margin-top:-1px;
+}
+.input{
+  margin-top:10px;
+  margin-left:15px;
 }
