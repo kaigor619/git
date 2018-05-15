@@ -1,0 +1,132 @@
+
+.arrow{
+  margin-left:32px;
+
+  position:relative;
+
+
+}
+
+/* Блок корзины */
+
+.arrow:hover+.arrow-block{
+  display:block;
+  opacity:1;
+}
+.arrow-block:hover{
+  display:block;
+opacity:1;
+
+}
+
+.arrow-block{
+  width:430px;
+
+  position:relative;
+
+
+margin-left:-180px;
+border-radius:15px;
+  transition:1s;
+
+  border-radius:15px;
+
+  display:none;
+  padding-bottom: 20px;
+  /* background:url('../img/background-block-basket.jpg'); */
+/* background: rgb(230, 200, 224); */
+background:#fff;
+
+}
+.arrow-block__main-text{
+  display:flex;
+  border-bottom:2px solid rgb(126, 87, 11);
+  box-shadow:0 0 10px rgb(46, 46, 41);
+  /* background:rgba(55, 55, 57, 0.87) */
+    /* background-color:rgba(227, 186, 98, 0.89); */
+    border-radius:15px;
+}
+.arrow-block__img{
+  margin:50px 0 0 10px;
+}
+
+.arrow-block__ul{
+  display:flex;
+  flex-direction: column;
+  margin-left:5px;
+
+}
+.arrow-block__ul li{
+  display:block;
+  margin-top:-20px;
+  margin-left:-30px;
+
+}
+.input-number{
+  width:50px;
+  height:30px;
+  font-size:1.4em;
+
+
+}
+/* span{
+  font-size:20px;
+  font-weight:550;
+} */
+.arrow-block__ul li h1{
+  font-size:35px;
+  color:#4f390a;
+}
+.arrow-block__ul li h3{
+  color:#fff;
+  padding:4px ;
+  width:100px;
+  margin-top:35px;
+
+  background:#30c528;
+  font-size: 24px;
+  border-radius:15px;
+}
+.checkbox-block{
+  width:20px;
+  height:20px;
+  display:block;
+}
+.arrow-block__checkbox{
+  margin-top:73px;
+  margin-left:10px;
+}
+.cena h3{
+  color:#fff;
+  /* padding:5px; */
+  /* background-color:#067d00; */
+  border-radius:10px;
+  font-size:23px;
+  width:120px;
+  text-decoration:underline;
+}
+.order3{
+font-size: 25px;
+  text-decoration: none;
+  color:#fff;
+  background:rgb(209, 20, 20);
+padding:6px 18px 6px 18px;
+  border-radius:9px;
+  font-weight: normal;
+    box-shadow:1px 4px 0 rgb(119, 21, 11);
+
+
+
+}
+.order3:hover {
+  color:#fff;
+  background-color:rgb(246, 44, 44) ;
+    box-shadow:1px 4px 0 rgb(119, 21, 11);
+}
+.order3:active{
+  box-shadow:0 1px 0 rgb(119, 21, 11) ;
+  position:relative;
+  top:3px;
+  left:3px;
+  /* border:1px solid rgb(242, 11, 11); */
+}

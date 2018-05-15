@@ -11,7 +11,7 @@ body{
 /*Первый экран*/
 header{
   height:840px;
-  background-image: url("/img/1.png");
+  background-image: url("../img/1.png");
 
 
 
@@ -22,11 +22,13 @@ header{
   margin:0;
   margin:0 auto;
   width:980px;
+  /* border:2px solid red; */
+
   /* border:2px solid silver; */
 
 }
 .head{
-  background-image: url("/img/деревянный-фон.png");
+  background-image: url("../img/деревянный-фон.png");
   height:150px;
   margin-left:39px;
   margin-right:39px;
@@ -36,12 +38,17 @@ header{
   width: 1715px;
   box-shadow: inset 0 0 10px rgb(92, 57, 11);
   overflow: visible;
-  /* position:fixed; */
-  z-index:1;
+  display:flex;
 
 }
+
+
+
+
+
 .first__slide{
   display:flex;
+  position:relative;
 }
 .container__logo{
   margin-top:15px;
@@ -75,37 +82,43 @@ header{
   color:#d98d3e;
 }
 .basket{
+  position:relative;
   margin-top:33px;
+  z-index:4;
 }
 
-.arrow{
-  margin-left:32px;
-  position:relative;
+
+.circle{
+  position:absolute;
+  top:2px;
+  left:55px;
+  height:30px;
+  width:30px;
+  background-color:rgb(255, 0, 0);
+  border-radius:15px;
+  color:rgb(255, 255, 255);
+  font-size:18px;
+  box-sizing: border-box;
+
 
 }
-.arrow:active{
-  transform: rotate(180deg);
-     transform-origin: 20% 40%;
+.number-of-waren{
 
-
+position:relative;
+top:4px;
+left:10px;
 }
 
-.arrow-block{
-  width:200px;
-  height:300px;
-  position:relative;
-  background-color: rgb(18, 221, 192);
 
-}
-.basket{
-  position:relative;
-  display:flex;
-  flex-direction: column;
-    z-index:20;
-}
+
+
 .price{
-  z-index:1;
-    position:relative;
+z-index:3;
+    position:absolute;
+    right:0;
+    margin-right:20px;
+
+
 
 }
 .itoho {
@@ -124,15 +137,28 @@ header{
 font-size: 20px;
   text-decoration: none;
   color:#fff;
-  background:#ee1a1a;
+  background:rgb(209, 20, 20);
 padding:6px 18px 6px 18px;
   border-radius:9px;
   font-weight: normal;
 
 margin-top:-5px;
   margin-left:18px;
-  box-shadow:0px 3px 15px rgb(75, 42, 24);
+    box-shadow:1px 4px 0 rgb(119, 21, 11);
     /* box-shadow: inset 0 0 10px rgb(85, 84, 81); */
+}
+.order:hover {
+  color:#fff;
+  background-color:rgb(246, 44, 44) ;
+  box-shadow:0px 3px 15px rgb(75, 42, 24);
+    box-shadow:1px 4px 0 rgb(119, 21, 11);
+}
+.order:active{
+  box-shadow:0 1px 0 rgb(119, 21, 11) ;
+  position:relative;
+  top:3px;
+  left:3px;
+  /* border:1px solid rgb(242, 11, 11); */
 }
 
 
@@ -197,8 +223,6 @@ margin-top:-5px;
   margin-bottom: 0;
   /* border-top:2px solid rgb(107, 76, 11); */
   box-shadow: 0 -2px 20px rgb(11, 10, 11);
-
-
 }
 .color-green{
   height:667px;
@@ -208,13 +232,11 @@ position:absolute;
 top:0;
 left:0;
 z-index:2;
-
-
 }
 .features__text{
   position:relative;
   z-index:10;
-  background-image:url("/img/особенности-узор.png");
+  background-image:url("../img/особенности-узор.png");
   height:667px;
   width:1056px;
   box-shadow: inset 0 0 40px rgb(88, 64, 11);
@@ -308,7 +330,8 @@ color:#392918;
 .menu-pizza{
 
   width:100%;
-  background:#e9c9c9;
+  /* background:#e9c9c9; */
+  background-image:url('../img/background-pizza.png');
   padding:0;
   margin:0;
   box-shadow: inset 0 0 30px rgb(56, 59, 61);
@@ -318,45 +341,56 @@ color:#392918;
 }
 .menu-pizza__title {
   font-size: 40px;
-  color: #6a4014;
+  color: #deccb9;
+  text-shadow: -3px -4px 0 rgb(112, 63, 23);
 
 
 }
 
 .first-menu{
-background: url("/img/первое меню.png");
-width:265px;
-height:394px;
+border:1px solid rgb(168, 119, 22);
+width:286px;
+background-color:rgb(250, 240, 240);
 overflow:hidden;
 border-radius:15px;
+
+box-shadow:0 0 18px rgb(75, 46, 8);
 }
 .first-menu:hover{
   transform:scale(1.1);
   transition:all.4s ease;
+
+
 }
 .first-menu__img{
-float:right;
-margin-top:9px;
-margin-left: 9px;
+  position:relative;
+
 
 }
-.first-menu__text{
-margin-top: -20px;
-margin-left: 16px;
-
-  padding:0;
+.first-menu__text {
+  margin-top:-20px;
 }
+
 .first-menu__text h1{
-  font-size:20px;
+  font-size:32px;
   text-align: center;
+  color:#6d400c;
 }
-.first-menu__text p{
-line-height:0.3;
-font-size:20px;
 
+.first-menu__text p{
+margin-left:5px;
+width:132px;
+font-size:24px;
+background-image:url('../img/ценник.png');
+padding:2px;
+color:#fff;
+margin-top:-5px;
 }
+
 .first-menu__text i{
-float:left;
+font-size: 1.1em;
+
+
 }
 .detail{
   font-size:18px;
@@ -365,6 +399,7 @@ float:left;
     float:right;
     margin-top:10px;
     margin-right:10px;
+    margin-bottom:10px;
 }
 .first-line, .two-line, .three-line{
   display:flex;
@@ -384,11 +419,11 @@ float:left;
 
 
 .delivery{
-background:url('/img/Доставка-фон.png');
+background:url('../img/Доставка-фон.png');
 margin:0;
 padding:0;
 
-height:790px
+height:842px
 }
 
 .delivery__title{
@@ -406,7 +441,7 @@ height:790px
 }
 .superiority-2 h3{
   text-align:center;
-  color:#000000;
+  color:rgb(171, 159, 159);
   font-size:30px;
   margin-top: -13px;
 }
@@ -421,6 +456,9 @@ height:790px
   margin-bottom:40px;
 }
 /* Конец Доставка */
+
+
+
 /* Начало Контакти */
 .both-contacts{
   display:flex;
@@ -429,41 +467,71 @@ height:790px
 .contacts{
 
   padding:0;
-  min-height:613px;
+  min-height:760px;
   margin:0;
-  border:1px solid rgb(17, 18, 18);
+  /* border:1px solid rgb(17, 18, 18); */
 
 
 }
 
 .contacts__text{
-  margin-top:52px;
-
+  position:relative;
+  margin-top:110px;
+  /* background:url('../img/background-pizza.png'); */
+  border-radius: 10px;
+  /* box-shadow: 0 0 30px rgb(62, 59, 59); */
+  padding:7px 10px 7px 10px;
   width:480px;
+
 }
 
 .contacts__text h1{
-  font-size:70px;
-  color:#fff;
+
+  font-size:73px;
+  color:#ffffff;
+  text-shadow:3px -3px 0 #422400;
+}
+.text-contact{
+  margin-top:-40px;
 }
 .contacts__text p i{
   font-size: 30px;
   font-weight:bold;
-  color:rgb(214, 180, 180);
+  color:rgb(28, 26, 24);
+  /* text-shadow:3px -3px 0 #3e2703; */
 }
 .contacts__text h3{
-  font-size:41px;
+  font-size:33px;
     color:rgb(255, 255, 255);
+    /* text-shadow:3px -3px 4px rgb(255, 255, 255); */
     font-weight:bold;
     margin-top:55px;
+    padding:7px 12px 7px 12px;
+  /* padding-right:0; */
+    /* background:rgb(233, 13, 13); */
+    border-radius: 10px;
+
 }
+
 
 .contacts__img{
   margin-top:113px;
-  margin-left:75px;
-box-shadow: 0 0 40px rgb(41, 43, 38)
+  margin-left:80px;
+box-shadow: 0 0 30px rgb(0, 0, 0);
 
 
+}
+.number{
+width:320px;
+height:60px;
+border-radius: 10px;
+  background:rgb(233, 13, 13);
+}
+.number:hover{
+  cursor:pointer;
+}
+iframe{
+  border-radius:10px;
 }
 
 /* КОНЕЦ Контакти
@@ -471,8 +539,9 @@ box-shadow: 0 0 40px rgb(41, 43, 38)
 
 Начало Футер */
 .footer{
-  background-image: url("/img/Футер.png");
-  height:120px;
+  /* background-image: url("../img/футер2.png"); */
+  background-color: rgb(19, 19, 18);
+  height:80px;
 }
 .footer_text{
 display:flex;
@@ -480,132 +549,71 @@ margin-top:40px;
 }
 .footer_text li{
   display:block;
-font-size:20px;
+font-size:17px;
+/* font-weight:600; */
 color:#fff;
-margin-right:50px;
+margin-left:40px;
+margin-top:-15px;
+
+
 }
 .footer-img{
-  margin-top:-20px;
+  margin-top:-10px;
+
+  /* width:50px;
+  height:100px; */
+}
+.footer-vk{
+  width:50px;
+  height:50px;
+
+}
+.button-up2{
+  font-size:18px;
+  color:#fff;
+  background:rgb(205, 26, 26);
+  padding:5px 20px 5px 20px;
+  border-radius:6px;
+  text-decoration: none;
+
+}
+.up2{
+  margin-top:-1px;
+  margin-left:20px;
 }
 /*Конец Футера  */
 
 
-/* Для стилизации модального окна */
 
-.block{
+/*  Регистрация Кнопки*/
+.reg-come{
+  position:absolute;
   display:flex;
-  flex-direction:column;
-}
-.box-modal {
-	position: relative;
-	width: 773px;
-	padding: 10px;
-	background: #fff;
+margin:20px 0 0 20px;
+font-size:25px;
 
-	box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
-	border-radius: 6px;
-}
-.box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
-.box-modal_close:hover { color: #666; }
 
-.modal-window{
-  border:2px solid #986f18;
-  width:773px;
-  height:589px;
-  box-sizing:border-box;
-  position: relative;
-  box-shadow: 0 0 15px rgb(48, 55, 52);
+}
+.reg, .come{
+  color:#fff;
+  background-color:rgb(194, 11, 5);
+  padding:7px;
   border-radius:10px;
-}
-.modal-window__img{
-  margin-left:20px;
-  margin-top:11px;
-}
-.modal-window__text{
-  width:320px;
-
-  margin-left:10px;
-  height:250px;
-margin-top:30px;
-
-
-
-}
-.modal-window__text h3{
-  color:#824e21;
-  font-size:2.9em;
-  font-weight:800;
-  text-align:center;
-  margin-top:-1px;
-}
-.modal-window__text p {
-  font-size:1.2em;
-  color:#110f0a;
-  text-align:center;
-  font-weight:bold;
-  margin-top:-20px;
-}
-.both-text{
-  display:flex;
-}
-
-.basket2{
-  text-decoration:none;
-  font-size:1.5em;
-  color:#fff;
-  background-color:#e43333;
-  padding:10px 22px 10px 22px;
-  border-radius: 8px;
-  box-shadow:1px 4px 0 rgb(119, 21, 11);
-  position: relative;
-  top:30px;
-  left:80px;
-}
-.star{
-  margin-left:90px;
-  margin-top:30px;
-}
-
-
-.modal-price{
-width:350px;
-
-margin-top:15px;
-height:200px;
-
-}
-.modal-price nav ul li{
-display:flex;
-justify-content: flex-start;
-margin-left:-30px;
-
-
-}
-.modal-price nav ul{
-  display:flex;
-  flex-direction:column;
-
-}
-
-.cm{
-  font-size:1.7em;
-  margin-top:0;
-  margin-left:10px;
+  text-decoration: none;
+  box-shadow:2px 4px 0 rgb(143, 2, 2);
   margin-right:10px;
-  color:#df5d08;
+
+
 }
-.arrow1, .input{
-  margin-top:7px;;
+.reg:hover, .come:hover{
+  background-color:rgb(212, 25, 19);
+
 }
-.input2{
-  margin-left:12px;
-}
-.padding{
-  padding:5px;
-  background-color: rgb(23, 168, 20);
-  color:#fff;
-  margin-top:-5px;
-  border-radius:8px;
-  margin-left:20px;
+.reg:active, .come:active{
+  box-shadow:0px 0px 0 rgb(143, 2, 2);
+  position:relative;
+  top:2px;
+  left:2px;
+  border-bottom: 1px solid rgb(143, 2, 2);
 
 }

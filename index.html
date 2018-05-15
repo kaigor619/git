@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Анимации</title>
-    <link rel="stylesheet" href="css/main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Пиццерия</title>
+
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/libs.min.js" charset="utf-8"></script>
       <script src="js/command.js" charset="utf-8"></script>
  <!-- Прокрутка -->
@@ -19,7 +21,14 @@
 <!--Фиксированное меню (шапка) при прокрутке  -->
 <script src="js/header/header.js" charset="utf-8"></script>
 <script src="js/header/headhesive.min.js" charset="utf-8"></script>
-
+<!-- Всплывающий блок Корзины -->
+<link rel="stylesheet" href="css/modal-block-basket.css">
+<!--Модальный блок Меню  -->
+<link rel="stylesheet" href="css/modal-block-menu.css">
+<!-- Модальное окно Регистрация Войти -->
+<link rel="stylesheet" href="css/modal__reg-come.css">
+<!--Регистрация  -->
+<script src="js/reg.js" charset="utf-8"></script>
 
   </head>
   <body>
@@ -29,22 +38,110 @@
 <header class="header">
   <!-- Начало шапки -->
   <div class="head">
+    <div class="reg-come">
+    <div class="reg-block"><a href="#reg-modal" class="reg">Регистрация</a></div>
+    <div class="come-block"><a href="#come-modal" class="come">Войти</a></div>
+    </div>
+
+
+    <div style="display: none;">
+      <div class="reg-modal" id="reg-modal">
+<div class="box-modal_close arcticmodal-close">закрыть</div>
+<form action="" name="test" method="post" class="form-reg" id="form__reg" name="form">
+
+  <label for="name" class="name"> Имя</label><span id="message"></span><br>
+  <input type="text" name="name" id="name" placeholder=" Андрей" title="Ваше имя" class="input"><br>
+
+  <label for="email" class="name">Email</label><span id="message-email"></span><br>
+  <input type="email" name="email" id="email" placeholder=" example@gmail.com" title="Ваше email" class="input"><br>
+
+  <label for="password" class="name">Пароль</label><span id="message-password"></span><br>
+  <input type="password" name="password" id="password"  title="Придумайте пароль" class="input"><br>
+
+  <label for="man" class="name name2">Пол</label><br>
+<div class="radio-block"><label for="men" class="radio">Мужской</label>
+<input type="radio" name="man" id="men" class="men" title="Пол">
+<label for="female" class="radio">Женский</label>
+  <input type="radio" name="man" id="female"  title="Пол"><br><center><span id="message-sex"></span></center></div>
+
+
+
+    <input type="button" id="done" value="Зарегистрироваться" class="button-reg" name="button" onclick="valid(document.getElementById('form__reg'))">
+</form>
+
+
+
+
+      </div>
+
+  </div>
+  <div style="display: none;">
+    <div class="come-modal" id="come-modal">
+<div class="box-modal_close arcticmodal-close">закрыть</div>
+<form action="" name="test" method="post" class="form-come">
+<label for="name" class="name">Email</label><br>
+<input type="text" name="email" id="email"  title="Ваш email" class="input"><br>
+<label for="password" class="name">Пароль</label><br>
+<input type="password" name="password" id="password"  title="Пароль" class="input"><br>
+<div class="come-button"><a href="#" class="reg-a">Войти</a></div>
+
+</form>
+
+
+
+
+    </div>
+
+</div>
+
+
     <div class="container first__slide">
       <div class="img"><img  src="img/эмблема.png" class="container__logo" alt="Главная"></div>
 
 <nav>
   <ul class="menu">
     <li><a href="#">Главная</a></li>
-    <li ><a href="#menu-pizza" class="menu-text" ><span class="menu-text__color">Меню</span></a></li>
+    <li ><a href="#menu-pizza" class="menu-text"><span class="menu-text__color">Меню</span></a></li>
     <li><a href="#contacts" class="contacts-a">Контакти</a></li>
     <li><a href="#delivery" class="delivery-a">Доставка</a></li>
 
   </ul>
 </nav>
 <div class="basket">
-<div class=""><img src="img/корзина1.png" alt="Корзина" ></div>
+<div class="korzina"><img src="img/корзина1.png" alt="Корзина" class="korzina-img" >
+<div class="circle"><span class="number-of-waren">2</span></div>
+</div>
+
+
+
 <div class="arrow"><a href="#"><img src="img/стрелка.png" alt="стрелка" title="стрелка"></a></div>
-<!-- <div class="arrow-block"></div> -->
+<div class="arrow-block">
+  <div class="arrow-block__main-text">
+    <div class="arrow-block__img"><img src="img/basket-img.png" alt=""></div>
+    <div class="arrow-block__text">
+      <nav>
+        <ul class="arrow-block__ul">
+          <li><h1>Мацарела</h1></li>
+          <li><center><input type="number" class="input-number"><span> шт.</span></center></li>
+          <li><center><h3>200 грн</h3></center></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="arrow-block__checkbox"><input type="checkbox" class="checkbox-block"></div>
+
+  </div>
+
+
+
+
+
+<div class="button">
+  <div class="cena"><center><h3>4200 грн</h3></center></div>
+  <div class="price-order"><center><a href="#" class="order3 ">Оформить</a></center></div>
+</div>
+
+</div>
 
 </div>
 
@@ -145,7 +242,7 @@
 <div class="first-menu__img"><img src="img/первое-меню-картинка.png" alt=""></div>
 <div class="first-menu__text">
 <h1>Мексикано</h1>
-<p><b>106 грн</b></p>
+<p><b><i>106 грн</i></b></p>
 <i>Нежная пицца со сливочным соусом, томатами...</i>
 <a href="#exampleModal" class="order detail">Подробнее</a>
 </div>
@@ -235,6 +332,7 @@
 
   </div>
 
+
   <div class="first-menu">
   <div class="first-menu__img"><img src="img/первое-меню-картинка.png" alt=""></div>
   <div class="first-menu__text">
@@ -275,7 +373,7 @@
             <h3 class="cm">40см</h3>
             <div class="arrow1"><img src="img/arrow.png" alt=""></div>
             <h3 class="cm padding">75 грн</h3>
-            <div class="input input2"><input type="checkbox"></div>
+            <div class="input-main input2"><input type="checkbox"></div>
           </li>
 
           <li>
@@ -283,7 +381,7 @@
             <h3 class="cm">60см</h3>
             <div class="arrow1"><img src="img/arrow.png" alt=""></div>
             <h3 class="cm padding">100 грн</h3>
-            <div class="input"><input type="checkbox"></div>
+            <div class="input-main"><input type="checkbox"></div>
           </li>
 
           <li>
@@ -291,7 +389,7 @@
             <h3 class="cm">80см</h3>
             <div class="arrow1"><img src="img/arrow.png" alt=""></div>
             <h3 class="cm padding">120 грн</h3>
-            <div class="input"><input type="checkbox"></div>
+            <div class="input-main"><input type="checkbox"></div>
           </li>
 
 
@@ -309,11 +407,6 @@
     </div>
     </div>
 
-
-
-    <!-- <a href="#" class="basket2">В корзину</a> -->
-  </body>
-</html>
 </div>
 
   <!-- Конец Меню -->
@@ -350,22 +443,28 @@
   </div>
 </div>
 <!-- Конец Доставка -->
+
+
+
+
+
+
 <!--Начало Контакти  -->
 
-<div id="contacts" class="contacts" data-parallax="scroll" data-image-src="/img/фон-контакти3.jpg.png">
+<div id="contacts" class="contacts" data-parallax="scroll" data-image-src="img/фон-контакти3.png">
   <div class="container">
     <div class="both-contacts">
 <div class="contacts__text">
 
-  <h1>Контакти</h1>
+<div class="text-contact"><h1>Контакти</h1></div><br>
   <p><i>г. Одесса</i></p>
   <p><i>ул. Приморская 14</i></p>
-  <h3><u>+38(097)-016-3202</u></h3>
+<div class="number"><h3>+38(097)-016-3202</h3></div>
 
 </div>
 <div class="contacts__img">
 
-<!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d690.3780909332115!2d30.34994352481554!3d46.20026167167077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1523267783763" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d690.3780909332115!2d30.34994352481554!3d46.20026167167077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1523267783763" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 </div>
 </div>
@@ -382,10 +481,10 @@
       <ul class="footer_text">
         <li>2017/Все права защищены</li>
         <li>+38(097)-016-3202</li>
-        <li><div class="footer-img"><a href="#"><img src="img/инстаграм.png" alt=""Соцыальные сети></a></div></li>
-        <li><div class="footer-img"><a href="#"><img src="img/вк.png" alt=""Соцыальные сети></a></div></li>
-        <li><div class="footer-img"><a href="#"><img src="img/фейсбук.png" alt=""Соцыальные сети></a></div></li>
-
+        <li><div class="footer-img"><a href="#"><img src="img/инстаграм.png" alt="Социальные сети" class="footer-vk"></a></div></li>
+        <li><div class="footer-img"><a href="#"><img src="img/вк.png" alt="Социальные сети" class="footer-vk"></a></div></li>
+        <li><div class="footer-img"><a href="#"><img src="img/фейсбук.png" alt="Социальные сети" class="footer-vk"></a></div></li>
+        <li><div class="up2"><a href="#" class="button-up2">Наверх</a></div></li>
 
 </ul>
 

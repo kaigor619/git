@@ -1,0 +1,119 @@
+/* Для стилизации модального окна */
+
+.block{
+  display:flex;
+  flex-direction:column;
+}
+.box-modal , .box-modal-2{
+	position: relative;
+	width: 773px;
+	padding: 10px;
+	background: #fff;
+
+	box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+	border-radius: 6px;
+}
+.box-modal_close { position: absolute; right: 10px; top: 6px; font-size: 11px; line-height: 15px; color: #999; cursor: pointer; }
+.box-modal_close:hover { color: #666; }
+
+.modal-window{
+  border:2px solid #986f18;
+  width:773px;
+  height:589px;
+  box-sizing:border-box;
+  position: relative;
+  box-shadow: 0 0 15px rgb(48, 55, 52);
+  border-radius:10px;
+}
+.modal-window__img{
+  margin-left:20px;
+  margin-top:11px;
+}
+.modal-window__text{
+  width:320px;
+
+  margin-left:10px;
+  height:250px;
+margin-top:30px;
+
+
+
+}
+.modal-window__text h3{
+  color:#824e21;
+  font-size:2.9em;
+  font-weight:800;
+  text-align:center;
+  margin-top:-1px;
+}
+.modal-window__text p {
+  font-size:1.2em;
+  color:#110f0a;
+  text-align:center;
+  font-weight:bold;
+  margin-top:-20px;
+}
+.both-text{
+  display:flex;
+}
+
+.basket2{
+  text-decoration:none;
+  font-size:1.5em;
+  color:#fff;
+  background-color:#e43333;
+  padding:10px 22px 10px 22px;
+  border-radius: 8px;
+  box-shadow:1px 4px 0 rgb(119, 21, 11);
+  position: relative;
+  top:30px;
+  left:80px;
+}
+.star{
+  margin-left:90px;
+  margin-top:30px;
+}
+
+
+.modal-price{
+width:350px;
+
+margin-top:15px;
+height:200px;
+
+}
+.modal-price nav ul li{
+display:flex;
+justify-content: flex-start;
+margin-left:-30px;
+
+
+}
+.modal-price nav ul{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.cm{
+  font-size:1.7em;
+  margin-top:0;
+  margin-left:10px;
+  margin-right:10px;
+  color:#df5d08;
+}
+.arrow1, .input-main{
+  margin-top:7px;
+}
+.input2{
+  margin-left:12px;
+}
+.padding{
+  padding:5px;
+  background-color: rgb(23, 168, 20);
+  color:#fff;
+  margin-top:-5px;
+  border-radius:8px;
+  margin-left:20px;
+
+}
